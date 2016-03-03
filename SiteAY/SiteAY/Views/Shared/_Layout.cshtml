@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Site.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="header">
+        <div class="title">Мой сайт (в разработке :) )</div>
+    </div>
+<div id="categories">
+    
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    @{
+        //<li>@Html.ActionLink("About", "About", "About")</li>
+
+    }
+    <li>@Html.ActionLink("My Favorite books", "FavouriteBooks", "About")</li>
+    <li>@Html.ActionLink("Contact", "Contact", "Contact")</li>
+    <li>@Html.ActionLink("Send Massage", "Massage", "Contact")</li>
+    
+</div>
+    <div id="content">
+        @RenderBody()
+    </div>
+</body>
+</html>

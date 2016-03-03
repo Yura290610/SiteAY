@@ -1,0 +1,12 @@
+﻿@model SiteAY.Models.Massager
+
+<!DOCTYPE html>
+
+@using (Html.BeginForm())
+{
+    <p>Your name: @Html.TextBoxFor(x => x.Name) </p>
+    <p>Your email: @Html.TextBoxFor(x => x.Email)</p>
+    <p>Your phone: @Html.TextBoxFor(x => x.Phone)</p>
+    <p>Your message: @Html.TextBoxFor(x => x.Text)</p>
+    <input type="submit" value="Submit RSVP" />
+}

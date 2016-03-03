@@ -1,0 +1,15 @@
+﻿
+
+<h1>My favourite books</h1>
+<div>
+    <ul>
+        
+        @foreach (var book in Model)
+        {
+
+         <li>@(book.Name + " " + book.Author + " " + book.About + "\n")</li>
+            <li> @(book.MyOpinion + " " + book.Author + " " + book.About + "\n")</li>
+           
+        }
+    </ul>
+</div>
